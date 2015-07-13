@@ -68,12 +68,12 @@
 
 						<li><a href="about.html">About</a></li>
 
-						<li class="dropdown">
-							<a href="#" class="dropdown-toggle" data-toggle="dropdown">Portfolio</a>
-							<ul class="dropdown-menu" role="menu">
+						<li><a href="portfolio.html">Portfolio</a></li>
+							<!-- <a href="#" class="dropdown-toggle" data-toggle="dropdown"></a>
+							<ul class="dropdown-menu" role="menu"> -->
 
-								<li class="dropdown">
-									<a href="#" class="dropdown-toggle" data-toggle="dropdown">Camel Trekking</a>
+								<!-- <li class="dropdown">
+									<a href="#" class="dropdown-toggle" data-toggle="dropdown">Camel Trekking</a> -->
 									<!-- <ul class="dropdown-menu">
 										<li><a href="portfolio-boxed-col2.html">Camel Trekking</a></li>
 										<li><a href="portfolio-boxed-col3.html">Reddit</a></li>
@@ -83,8 +83,8 @@
 									</ul>
 								</li> -->
 
-								<li class="dropdown">
-									<a href="#" class="dropdown-toggle" data-toggle="dropdown">Reddit</a>
+								<!-- <li class="dropdown">
+									<a href="#" class="dropdown-toggle" data-toggle="dropdown">Reddit</a> -->
 									<!-- <ul class="dropdown-menu">
 										<li><a href="portfolio-boxed-gutter-col2.html">2 Columns</a></li>
 										<li><a href="portfolio-boxed-gutter-col3.html">3 Columns</a></li>
@@ -92,10 +92,10 @@
 										<li><a href="portfolio-boxed-gutter-hover-black.html">Hover Black</a></li>
 										<li><a href="portfolio-boxed-gutter-hover-gradient.html">Hover Gradient</a></li>
 									</ul>  -->
-								</li>
+								<!-- </li> -->
 
-								<li class="dropdown">
-									<a href="#">Microblogging</a>
+								<!-- <li class="dropdown">
+									<a href="#">Microblogging</a> -->
 									<!-- <ul class="dropdown-menu">
 										<li><a href="portfolio-boxed-masonry-col2.html">2 Columns</a></li>
 										<li><a href="portfolio-boxed-masonry-col3.html">3 Columns</a></li>
@@ -103,9 +103,9 @@
 										<li><a href="portfolio-boxed-masonry-hover-black.html">Hover Black</a></li>
 										<li><a href="portfolio-boxed-masonry-hover-gradient.html">Hover Gradient</a></li>
 									</ul> -->
-								</li>
+								<!-- </li> -->
 
-								<li><a href="contact.html">Contact</a></li>
+
 
 								<!-- <li class="dropdown">
 									<a href="#" class="dropdown-toggle" data-toggle="dropdown">Wide</a>
@@ -201,8 +201,8 @@
 								<li><a href="comp-typography.html"><i class="fa fa-font"></i> Typography</a></li>
 							</ul>
 						</li> -->
-<!--
-						<li><a href="contact.html">Contact</a></li> -->
+
+						<li><a href="contact.html">Contact</a></li>
 
 					</ul>
 				</div>
@@ -220,7 +220,7 @@
 				<div class="hs-title-size-4 font-alt m-b-30">
 					Amanda Lemmons
 				</div>
-				<div class="hs-title-size-1 font-inc">
+				<div class="hs-title-size-1 font-inc" id ="name">
 					Hello, I'm Amanda and I am a Rails Developer<br/>
 				</div>
 			</div>
@@ -241,168 +241,220 @@
 				<div class="row">
 					<div class="col-sm-12">
 
-						<ul id="filters" class="filter font-inc">
+						<ul id="filters" class="filter font-inc hidden-xs">
 							<li><a href="#" data-filter="*" class="current wow fadeInUp">All</a></li>
-							<li><a href="#" data-filter=".code" class="wow fadeInUp" data-wow-delay="0.2s">Code</a></li>
-							<li><a href="#" data-filter=".marketing" class="wow fadeInUp" data-wow-delay="0.4s">Marketing</a></li>
-							<li><a href="#" data-filter=".photography" class="wow fadeInUp" data-wow-delay="0.6s">Photography</a></li>
-							<li><a href="#" data-filter=".webdesign" class="wow fadeInUp" data-wow-delay="0.8s">Web Design</a></li>
+							<li><a href="#" data-filter=".illustration" class="wow fadeInUp" data-wow-delay="0.2s">Command Line Ruby</a></li>
+							<li><a href="#" data-filter=".marketing" class="wow fadeInUp" data-wow-delay="0.4s">Rails Apps</a></li>
+							<li><a href="#" data-filter=".photography" class="wow fadeInUp" data-wow-delay="0.6s">Group Projects</a></li>
+							<li><a href="#" data-filter=".webdesign" class="wow fadeInUp" data-wow-delay="0.8s">APIs</a></li>
 						</ul>
 
 					</div>
 				</div>
 				<!-- /PORTFOLIO FILTER -->
 
+				<!-- PORTFOLIO LIST -->
+				<ul id="works-grid" class="works-grid works-grid-gut works-grid-3 works-hover-g">
+
+					<!-- PORTFOLIO ITEM -->
+					<li class="work-item marketing">
+						<a href="assets/images/interests.jpg" class="popup" title="Interests">
+							<div class="work-image">
+								<img src="assets/images/interests.jpg" alt="">
+							</div>
+							<div class="work-caption">
+								<div class="work-descr font-inc">
+										A Pinterest copy using JavaScript, BootStrap and JQuery. <span class="icon-magnifying-glass"></span></h5>
+										<br>
+										<a href="https://interests-tiy.herokuapp.com"> Live site on Heroku </a>
+										<br>
+										<a href="https://github.com/AmandaLemmons/interests"> Code on GitHub </a>
+								</div>
+							</div>
+						</a>
+					</li>
+					<!-- /PORTFOLIO ITEM -->
+
+					<!-- PORTFOLIO ITEM -->
+					<li class="work-item marketing">
+						<a href="assets/images/reddit.jpg" class="popup" title="Reddit">
+							<div class="work-image">
+								<img src="assets/images/reddit.jpg" alt="">
+							</div>
+							<div class="work-caption">
+								<div class="work-descr font-inc">
+									A Reddit copy using Bootstrap <span class="icon-magnifying-glass"></span>
+									<br>
+									<a href="https://reddit-clone-lab5.herokuapp.com"> Live site on Heroku </a>
+									<br>
+									<a href="https://github.com/AmandaLemmons/week5-lab"> Code on GitHub </a>
+								</div>
+							</div>
+						</a>
+					</li>
+					<!-- /PORTFOLIO ITEM -->
+
+					<!-- PORTFOLIO ITEM -->
+					<li class="work-item marketing photography webdesign">
+						<a href="assets/images/secrets.jpg" class="popup" title="Secrets">
+							<div class="work-image">
+								<img src="assets/images/secrets.jpg" alt="">
+							</div>
+							<div class="work-caption">
+									<div class="work-descr font-inc">
+										A Whisper copy with APIs and JSON. Assisted in the backend and lead frontend development. <span class="icon-magnifying-glass"></span>
+										<br>
+										<a href="secrets-tiy-frontend.herokuapp.com"> Live site on Heroku </a>
+										<br>
+										<a href="https://github.com/AmandaLemmons/secrets-frontend-2"> Frontend Code on GitHub </a>
+										<br>
+										<a href="https://github.com/AmandaLemmons/secrets-backend-2"> Backend Code on GitHub </a>
+									</div>
+							</div>
+						</a>
+					</li>
+					<!-- /PORTFOLIO ITEM -->
+
+					<!-- PORTFOLIO ITEM -->
+
+					<li class="work-item illustration">
+						<a href="assets/images/blackjack.jpg" class="popup" title="Blackjack">
+							<div class="work-image">
+								<img src="assets/images/blackjack.jpg" alt="">
+							</div>
+							<div class="work-caption">
+								<div class="work-descr font-inc">
+									Ruby console game <span class="icon-magnifying-glass"></span>
+									<br>
+										<a href="https://github.com/AmandaLemmons/blackjack"> Code on GitHub </a>
+								</div>
+							</div>
+						</a>
+					</li>
+					<!-- /PORTFOLIO ITEM -->
+
+					<!-- PORTFOLIO ITEM -->
+					<li class="work-item marketing ">
+						<a href="portfolio-single-1.html">
+							<div class="work-image">
+								<img src="assets/images/chatter.jpg" alt="">
+							</div>
+							<div class="work-caption">
+								<h3 class="work-title font-alt">Chatter</h3>
+								<div class="work-descr font-inc">
+									A Twitter copy using bootstrap
+				          <br>
+				          <a href="https://chatter-tiy.herokuapp.com"> Live site on Heroku /</a>
+				          <br>
+				          <a href="https://github.com/AmandaLemmons/twitter-lab6"> Code on GitHub </a>
+								</div>
+							</div>
+						</a>
+					</li>
+					<!-- /PORTFOLIO ITEM -->
+
+					<!-- PORTFOLIO ITEM -->
+					<li class="work-item marketing">
+						<a href="assets/images/cameltrekking.jpg" class="popup" title="Camel Trekking Co">
+							<div class="work-image">
+								<img src="assets/images/cameltrekking.jpg" alt="">
+							</div>
+							<div class="work-caption">
+								<div class="work-descr font-inc">
+									A dynamic responsive blog without the use of Bootstrap	<span class="icon-magnifying-glass"></span>
+					        <br>
+					        <a href="portfolio-single-1.html"> Live site on Heroku --- ADD LINK </a>
+					        <br>
+					        <a href="https://github.com/AmandaLemmons/Lab4-Surf-and-Rails"> Code on GitHub </a>
+								</div>
+							</div>
+						</a>
+					</li>
+					<!-- /PORTFOLIO ITEM -->
+
+					<!-- PORTFOLIO ITEM -->
+					<li class="work-item marketing">
+						<a href="assets/images/blog.jpg" class="popup" title="Responsive Blog Design">
+							<div class="work-image">
+								<img src="assets/images/blog.jpg" alt="">
+							</div>
+							<div class="work-caption">
+									<span class="icon-magnifying-glass"></span>
+							</div>
+						</a>
+					</li>
+					<!-- /PORTFOLIO ITEM -->
+
+					<!-- PORTFOLIO ITEM -->
+					<li class="work-item illustration">
+						<a href="assets/images/lab1.jpg" class="popup" title="Parsing CSV Files">
+							<div class="work-image">
+								<img src="assets/images/lab1.jpg" alt="">
+							</div>
+							<div class="work-caption">
+								<div class="work-descr font-inc">
+									<br>
+									<a href="https://github.com/AmandaLemmons/lab1"> Code on GitHub</a><span class="icon-magnifying-glass"></span>
+							</div>
+							</div>
+						</a>
+					</li>
+
+					<!-- /PORTFOLIO ITEM -->
+
+					<!-- PORTFOLIO ITEM -->
+					<!-- <li class="work-item marketing webdesign">
+						<a href="portfolio-single-1.html">
+							<div class="work-image">
+								<img src="assets/images/work-2.jpg" alt="">
+							</div>
+							<div class="work-caption">
+								<h3 class="work-title font-alt">Business Cards in paper clip</h3>
+								<div class="work-descr font-inc">
+									Marketing
+								</div>
+							</div>
+						</a>
+					</li> -->
+					<!-- /PORTFOLIO ITEM -->
+
+				</ul>
+				<!-- /PORTFOLIO LIST -->
+
 			</div>
-
-			<!-- PORTFOLIO LIST -->
-			<ul id="works-grid" class="works-grid works-grid-masonry works-grid-3 works-hover-w">
-
-				<!-- PORTFOLIO ITEM -->
-				<li class="work-item illustration webdesign">
-					<a href="https://interests-tiy.herokuapp.com/">
-						<div class="work-image">
-							<img src="assets/images/interests.jpg" alt="">
-						</div>
-						<div class="work-caption">
-							<h3 class="work-title font-alt">Interests</h3>
-							<div class="work-descr font-inc">
-								A Pinterest Copy
-							</div>
-						</div>
-					</a>
-				</li>
-				<!-- /PORTFOLIO ITEM -->
-
-				<!-- PORTFOLIO ITEM -->
-				<li class="work-item marketing webdesign">
-					<a href="https://reddit-clone-lab5.herokuapp.com/">
-						<div class="work-image">
-							<img src="assets/images/reddit.jpg" alt="">
-						</div>
-						<div class="work-caption">
-							<h3 class="work-title font-alt">Reddit</h3>
-							<div class="work-descr font-inc">
-								A Reddit Copy
-							</div>
-						</div>
-					</a>
-				</li>
-				<!-- /PORTFOLIO ITEM -->
-
-				<!-- PORTFOLIO ITEM -->
-				<li class="work-item illustration photography">
-					<a href="portfolio-single-1.html">
-						<div class="work-image">
-							<img src="assets/images/camel_trekking.jpg" alt="">
-						</div>
-						<div class="work-caption">
-							<h3 class="work-title font-alt">Camel Trekking Co</h3>
-							<div class="work-descr font-inc">
-								Responsive Blog
-							</div>
-						</div>
-					</a>
-				</li>
-				<!-- /PORTFOLIO ITEM -->
-
-				<!-- PORTFOLIO ITEM -->
-				<li class="work-item marketing photography">
-					<a href="portfolio-single-1.html">
-						<div class="work-image">
-							<img src="assets/images/work-7.jpg" alt="">
-						</div>
-						<div class="work-caption">
-							<h3 class="work-title font-alt">Business Cards in paper clip</h3>
-							<div class="work-descr font-inc">
-								Marketing
-							</div>
-						</div>
-					</a>
-				</li>
-				<!-- /PORTFOLIO ITEM -->
-
-				<!-- PORTFOLIO ITEM -->
-				<li class="work-item illustration webdesign">
-					<a href="portfolio-single-1.html">
-						<div class="work-image">
-							<img src="assets/images/.jpg" alt="">
-						</div>
-						<div class="work-caption">
-							<h3 class="work-title font-alt">Twitter</h3>
-							<div class="work-descr font-inc">
-									Twitter Copy
-							</div>
-						</div>
-					</a>
-				</li>
-				<!-- /PORTFOLIO ITEM -->
-
-				<!-- PORTFOLIO ITEM -->
-				<li class="work-item marketing webdesign">
-					<a href="portfolio-single-1.html">
-						<div class="work-image">
-							<img src="assets/images/blog.jpg" alt="">
-						</div>
-						<div class="work-caption">
-							<h3 class="work-title font-alt">Simple Blog</h3>
-							<div class="work-descr font-inc">
-								Responsive Blog Design
-							</div>
-						</div>
-					</a>
-				</li>
-				<!-- /PORTFOLIO ITEM -->
-
-				<!-- PORTFOLIO ITEM -->
-				<li class="work-item marketing webdesign">
-					<a href="portfolio-single-1.html">
-						<div class="work-image">
-							<img src="assets/images/work-7.jpg" alt="">
-						</div>
-						<div class="work-caption">
-							<h3 class="work-title font-alt">Business Cards in paper clip</h3>
-							<div class="work-descr font-inc">
-								Marketing
-							</div>
-						</div>
-					</a>
-				</li>
-				<!-- /PORTFOLIO ITEM -->
-
-			</ul>
-			<!-- /PORTFOLIO LIST -->
 
 		</section>
 		<!-- /PORTFOLIO -->
 
+
+
 		<!-- TESTIMONIAL -->
-		<section class="module-small">
+		<!-- <section class="module-small">
 
 			<div class="container">
 
-				<div class="row">
+				<div class="row"> -->
 
 					<!-- MODULE TITLE -->
-					<div class="col-sm-6">
+					<!-- <div class="col-sm-6">
 						<h2 class="module-title font-alt">Someone quote</h2>
-					</div>
+					</div> -->
 					<!-- /MODULE TITLE
 
 					<!-- BLOCKQUOTE -->
-					<div class="col-sm-6">
+					<!-- <div class="col-sm-6">
 						<blockquote class="font-serif align-right">
 							<p>The languages only differ in their grammar, their pronunciation and their most common words. Everyone realizes why a new common language would be desirable: one could refuse to pay expensive translators.</p>
 							<p class="font-inc font-uppercase">- Thomas Anderson</p>
 						</blockquote>
-					</div>
+					</div> -->
 					<!-- /BLOCKQUOTE -->
 
-				</div>
-
+				<!-- </div> -->
+<!--
 			</div>
 
-		</section>
+		</section> -->
 		<!-- /TESTIMONIAL -->
 
 		<!-- ABOUT -->
@@ -417,17 +469,15 @@
 						<h2 class="module-title font-alt">About Me</h2>
 
 						<div class="module-subtitle font-inc">
-							I am a learning enthusiast explorer.
+							I am a learning enthusiast and rails developer.
 						</div>
+						<p>I started my professional career doing Corporate Marketing where I was lightly exposed to the power of programming and data analysis. After teaching myself the basics, I decided a career change was in order and I enrolled at The Iron Yard to learn the ins and outs of Rails Engineering. </p>
 
-						<p>After graduating from the University of Texas at Austin with a Degree in Corporate Communicaitons and a minor in Business, I moved to Mallorca, Spain to immerse myself in the language and culture and use my degree doing Corporate Marketing. </p>
-
-						<p>Almost five years later I have returned to Texas pursue my newest passion, programming. After months of learning on my own I decided that the best way to succeed was to throw myself in headfirst and immerse myself in a new languge. </p>
+						<p>A little bit more…  I graduated from The University of Texas at Austin with a degree in Corporate Communications and a Minor in Business. After graduation, I lived and worked in Mallorca, Spain for five years where I developed a love for tapas and rock climbing. In my free time I enjoy running, reading historical fiction novels, or trying to teach my dog how to properly play fetch. </p>
 
 						<ul class="social-list">
-							<li><a href="#"><span class="icon-facebook"></span></a></li>
-							<li><a href="#"><span class="icon-twitter"></span></a></li>
-							<li><a href="#"><span class="icon-googleplus"></span></a></li>
+							<li><a href="https://es.linkedin.com/in/amandalemmons"><i class="fa fa-linkedin-square"></i></a></li>
+							<li><a href="https://github.com/AmandaLemmons"><i class="fa fa-github"></i></a></li>
 						</ul>
 
 					</div>
@@ -463,10 +513,11 @@
 					<div class="col-sm-4">
 						<div class="content-box">
 							<div class="content-box-icon">
-								<span class="icon-phone"></span>
+									<span aria-hidden="true" class="icon-document"></span>
+								</span>
 							</div>
 							<div class="content-box-title font-inc">
-								+1 234 567 89 00
+								View Resume
 							</div>
 						</div>
 					</div>
